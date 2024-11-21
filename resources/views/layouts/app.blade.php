@@ -36,7 +36,7 @@
                         <li class="nav-item mx-1">
 
                             <div class="btn-group dropdown">
-                                <a class="nav-link btn btn-light" href="#">ZARA </a>
+                                <a class="nav-link btn btn-light" href="#">BLAUER </a>
                                 <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                         data-toggle="dropdown">
                                     <span class="sr-only">Toggle Dropdown</span>
