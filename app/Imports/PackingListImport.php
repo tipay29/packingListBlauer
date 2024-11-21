@@ -22,7 +22,7 @@ class PackingListImport implements ToModel,WithHeadingRow, WithColumnLimit
 
     public function model(array $row)
     {
-        $packing_list = $this->existCheck($row['factory_po'],$row['po'],$this->convertDate($row['crd']),$row['ship_mode'],$row['destination']);
+        $packing_list = $this->existCheck($row['factory_po'],$row['po'],$this->convertDate($row['crd']),$row['ship_mode'],$row['destination'],$row['color_code']);
 
         if($packing_list === null){
 
@@ -90,9 +90,10 @@ class PackingListImport implements ToModel,WithHeadingRow, WithColumnLimit
         return $crd = Carbon::instance(Date::excelToDateTimeObject($crd));
     }
 
-    private function existCheck($factory_po, $po, $crd, $ship_mode, $destination)
+    private function existCheck($factory_po, $po, $crd, $ship_mode, $destination,$color_code)
     {
         $packing_list = PackingList::where([
+            ['pl_color_code',$color_code],
             ['pl_factory_po',$factory_po],
             ['pl_po',$po],
             ['pl_crd',$crd],

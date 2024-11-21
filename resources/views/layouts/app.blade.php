@@ -36,23 +36,33 @@
                         <li class="nav-item mx-1">
 
                             <div class="btn-group dropdown">
-                                <a class="nav-link btn btn-light" href="#">BLAUER </a>
+                                <a class="nav-link btn btn-light" href="#">ZARA </a>
                                 <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                         data-toggle="dropdown">
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{route('packing-lists.index')}}">Packing Lists</a></li>
-                                    <li><a class="dropdown-item" href="{{route('packing-lists.create')}}">Packing Lists Create</a></li>
-                                    <li><a class="dropdown-item" href="{{route('styles.index')}}">Styles</a></li>
-                                    <li><a class="dropdown-item" href="{{route('styles.create')}}">Style MCQ Create</a></li>
-                                    <li><a class="dropdown-item" href="{{route('carton-marks.index')}}">Carton Marks</a></li>
-                                    <li><a class="dropdown-item" href="{{route('carton-marks.create')}}">Carton Marks Create</a></li>
-                                    <li><a class="dropdown-item" href="{{route('cartons.index')}}">Cartons</a></li>
-                                    <li><a class="dropdown-item" href="{{route('cartons.create')}}">Carton Create</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6060/">Jackwolfskin</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6061/">Armani</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6062/">Blauer</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6063/">KWay</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6064/">Reebok</a></li>
+                                    <li><a class="dropdown-item" href="http://192.168.1.74:6065/">Zara</a></li>
                                 </ul>
                             </div>
 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('packing-lists.index')}}">Packing Lists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('styles.index')}}">Styles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('carton-marks.index')}}">Carton Marks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('cartons.index')}}">Cartons</a>
                         </li>
                     </ul>
 
