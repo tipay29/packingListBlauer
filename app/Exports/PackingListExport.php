@@ -382,7 +382,7 @@ class PackingListExport implements FromCollection,WithTitle,WithEvents,WithDrawi
         $exp_name_of_sizes = explode(',',$this->packing_list['pl_name_of_sizes']);
         $exp_quantities = explode(',',$this->packing_list['pl_quantities']);
 
-        for($y=0;$y<=$this->packing_list['pl_no_of_sizes'];$y++){
+        for($y=0;$y<$this->packing_list['pl_no_of_sizes'];$y++){
             $this->pl_sizes_sort[array_search($exp_name_of_sizes[$y], $this->size_list)] = $exp_name_of_sizes[$y];
             $this->pl_quantities[$exp_name_of_sizes[$y]] = $exp_quantities[$y];
             $this->pl_size_letters[$exp_name_of_sizes[$y]] = $this->column_letter[26+$y];
