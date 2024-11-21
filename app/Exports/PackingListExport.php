@@ -368,9 +368,9 @@ class PackingListExport implements FromCollection,WithTitle,WithEvents,WithDrawi
     private function setBrandLogo($worksheet)
     {
         $drawings = new Drawing();
-        $drawings->setName('ZARA');
-        $drawings->setDescription('ZARA Logo');
-        $drawings->setPath(public_path('\\storage\\images\\zara-logo.png'));
+        $drawings->setName('BLAUER');
+        $drawings->setDescription('BLAUER Logo');
+        $drawings->setPath(public_path('\\storage\\images\\bl-logo.png'));
         $drawings->setHeight(25);
         $drawings->setCoordinates('C1');
         $drawings->setWorksheet($worksheet);
