@@ -55,7 +55,7 @@ class PackingListImport implements ToModel,WithHeadingRow, WithColumnLimit
 
         $packing_list = [
             'pl_md' => $row['md'],
-            'pl_brand' => 'JACKWOLFSKIN',
+            'pl_brand' => 'BLAUER',
             'pl_factory_po' => $row['factory_po'],
             'pl_po' => $row['po'],
             'pl_style_code' => $row['style_code'],
